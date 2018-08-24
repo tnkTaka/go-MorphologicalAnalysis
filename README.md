@@ -11,11 +11,11 @@ $ dep ensure
 main.go
 <br>
 `text := "String of your choice"`
-<br>
+<br><br>
 result
 <br>
-character  + Appearance frequency
-<br>
+`character  + Appearance frequency`
+<br><br>
 ex) 
 <br>
-golang 1
+`golang 1`
