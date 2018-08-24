@@ -9,10 +9,13 @@ $ dep ensure
 
 ### Quick Tutorial
 main.go
+<br>
 `text := "String of your choice"`
-
+<br>
 result
+<br>
 character  + Appearance frequency
-
+<br>
 ex) 
+<br>
 golang 1
