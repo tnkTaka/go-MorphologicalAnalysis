@@ -8,10 +8,11 @@ import (
 	"github.com/ikawaha/kagome/splitter"
 	"github.com/ikawaha/kagome/tokenizer"
 	"strings"
+
 	"fmt"
 )
 
-func MorphologicalAnalysis(text string) {
+func MorphologicalAnalysis(text string) map[string]int{
 	ch := make(chan string, 1024)
 
 	r := strings.NewReader(text)
@@ -25,9 +26,9 @@ func MorphologicalAnalysis(text string) {
 		}
 		m[s]++
 	}
-	for k, v := range m {
-		fmt.Printf("%v\t%v\n", k, v)
-	}
+
+	fmt.Println(m)
+	return m
 }
 
 func nounFilter(ch chan<- string, r io.Reader) {
