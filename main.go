@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	text := "golang で形態素解析を並列実行させるgolang"
+	text := "golang で形態素解析を並列実行させる"
 	result := analysis.MorphologicalAnalysis(text)
 	fmt.Println(result)
 }
